@@ -1,0 +1,14 @@
+.menu {
+  margin: 20px;
+}
+
+.header-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=header.css.map */
