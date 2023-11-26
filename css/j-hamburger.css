@@ -368,14 +368,12 @@ media min640
   font-size: 1.4rem;
 }
 
-header {
-  margin-bottom: 50px;
-}
-
 #hamburger {
   width: 100%;
+  position: fixed;
   box-shadow: 0 2px 8px #1869bc;
   padding: 20px 0;
+  height: 30px;
 }
 
 .mobile-nav {
@@ -390,39 +388,8 @@ header {
 }
 
 /*---------------------------------
-  hamburger menu
+hamburger menu
 ---------------------------------*/
-.pc-nav {
-  display: none;
-}
-
-.mobile-nav {
-  text-align: center;
-}
-.mobile-nav :hover {
-  cursor: pointer;
-}
-
-.j-overlay.show li:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.j-overlay.show li:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.j-overlay.show li:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.j-overlay.show li:nth-child(4) {
-  transition-delay: 0.4s;
-}
-
-.j-overlay.show li:nth-child(5) {
-  transition-delay: 0.5s;
-}
-
 .j-overlay {
   display: none;
   position: fixed;
@@ -430,14 +397,10 @@ header {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.9);
   text-align: center;
   padding: 64px;
-  /* opacity: 0; */
-  pointer-events: none;
-  transition: opacity 0.7s;
 }
 .j-overlay a:hover {
   text-decoration: underline;
@@ -465,7 +428,55 @@ header {
 }
 .j-overlay li {
   margin-top: 24px;
-  opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.3s, transform 0.3s;
-}/*# sourceMappingURL=j-hanburger.css.map */
+}
+.j-overlay li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.j-overlay li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.j-overlay li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.j-overlay li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.j-overlay li:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.pc-nav {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  /*---------------------------------
+  nav
+  ---------------------------------*/
+  .mobile-nav {
+    display: none;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pc-nav-text {
+    display: block;
+    border-radius: 5px;
+    padding: 5px 14px;
+    margin: 3px;
+    font-size: 1rem;
+    color: #1869bc;
+    transition-property: background 0.3s ease;
+  }
+  .pc-nav a:hover {
+    background: #1869bc;
+    color: #fff;
+    transition-property: background 0.3s ease;
+  }
+}/*# sourceMappingURL=j-hamburger.css.map */
