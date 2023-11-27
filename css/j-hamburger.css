@@ -368,6 +368,13 @@ media min640
   font-size: 1.4rem;
 }
 
+.index-header {
+  font-size: 1.4rem;
+}
+.index-header li {
+  margin-bottom: 15px;
+}
+
 #hamburger {
   width: 100%;
   position: fixed;
@@ -415,10 +422,6 @@ hamburger menu
   opacity: 1;
   pointer-events: auto;
 }
-.j-overlay.show li {
-  opacity: 1;
-  transform: none;
-}
 .j-overlay #j-close {
   position: absolute;
   top: 8px;
@@ -430,21 +433,6 @@ hamburger menu
   margin-top: 24px;
   transform: translateY(16px);
   transition: opacity 0.3s, transform 0.3s;
-}
-.j-overlay li:nth-child(1) {
-  transition-delay: 0.1s;
-}
-.j-overlay li:nth-child(2) {
-  transition-delay: 0.2s;
-}
-.j-overlay li:nth-child(3) {
-  transition-delay: 0.3s;
-}
-.j-overlay li:nth-child(4) {
-  transition-delay: 0.4s;
-}
-.j-overlay li:nth-child(5) {
-  transition-delay: 0.5s;
 }
 
 .pc-nav {

@@ -11,4 +11,11 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
+}
+
+.index-header {
+  font-size: 1.4rem;
+}
+.index-header li {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=header.css.map */
