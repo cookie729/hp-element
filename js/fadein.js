@@ -7,7 +7,6 @@
       if (!entry.isIntersecting) {
         return;
       }
-
       entry.target.classList.add('appear');
       obs.unobserve(entry.target);
     });
@@ -19,7 +18,7 @@
 
   const observer = new IntersectionObserver(callback, options);
 
-  const targets = document.querySelectorAll('.wrapper, .text');
+  const targets = document.querySelectorAll('.wrapper, .fade-wrap');
 
   targets.forEach((target) => {
     observer.observe(target);
