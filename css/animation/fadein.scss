@@ -2,10 +2,9 @@
   position: relative;
   width: 450px;
   height: 450px;
-  background: yellow;
   margin: 0 auto;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
   img {
     width: 450px;
     height: 450px;
@@ -22,4 +21,17 @@
   top: 50px;
   right: 0;
   left: 0;
+}
+
+.bg-red {
+  background: palegoldenrod;
+}
+.bg-blue {
+  background: rgb(177, 233, 255);
+}
+.bg-green {
+  background: lightgreen;
+}
+.bg-plum {
+  background: plum;
 }

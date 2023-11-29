@@ -1,5 +1,14 @@
+$main-color: #1869bc;
+
 .menu {
-  margin: 20px;
+  margin: 50px;
+  background: rgb(245, 255, 255);
+}
+
+.border-bottom {
+  box-shadow: 0 2px 8px 0px $main-color;
+  padding: 10px;
+  
 }
 
 .header-title {

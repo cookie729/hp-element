@@ -37,6 +37,10 @@ a {
   margin-bottom: 100px;
 }
 
+.mb200 {
+  margin-bottom: 300px;
+}
+
 .mt {
   margin-top: 100px;
 }
@@ -66,10 +70,10 @@ p {
 container
 ---------------------------------*/
 .container {
-  background-image: linear-gradient(#fff, #cdf7f7, #fff, #cdf7f7);
+  background-image: linear-gradient(rgb(252, 238, 254), #cdf7f7, rgb(252, 255, 247), #cdf7f7);
   height: 100%;
-  position: relative;
-  overflow: hidden;
+  // position: relative;
+  // overflow: hidden;
 }
 
 /*---------------------------------

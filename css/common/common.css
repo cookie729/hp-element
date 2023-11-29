@@ -30,6 +30,10 @@ a {
   margin-bottom: 100px;
 }
 
+.mb200 {
+  margin-bottom: 300px;
+}
+
 .mt {
   margin-top: 100px;
 }
@@ -59,10 +63,8 @@ p {
 container
 ---------------------------------*/
 .container {
-  background-image: linear-gradient(#fff, #cdf7f7, #fff, #cdf7f7);
+  background-image: linear-gradient(rgb(252, 238, 254), #cdf7f7, rgb(252, 255, 247), #cdf7f7);
   height: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
 /*---------------------------------
@@ -130,11 +132,11 @@ media min640
     line-height: 1.7;
   }
   .name,
-  .content-item,
-  .service-wrap,
-  .asterisk,
-  .lang,
-  .profile {
+.content-item,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
     margin-left: 30%;
   }
   /*---------------------------------
@@ -171,11 +173,11 @@ media min640
   text
   ---------------------------------*/
   .name,
-  .content-item,
-  .service-wrap,
-  .asterisk,
-  .lang,
-  .profile {
+.content-item,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
     margin-left: 40%;
   }
   /*---------------------------------
@@ -186,4 +188,5 @@ media min640
     margin: 0 auto;
     left: 55%;
   }
-}/*# sourceMappingURL=common.css.map */
+}
+/*# sourceMappingURL=common.css.map */

@@ -1,5 +1,11 @@
 .menu {
-  margin: 20px;
+  margin: 50px;
+  background: rgb(245, 255, 255);
+}
+
+.border-bottom {
+  box-shadow: 0 2px 8px 0px #1869bc;
+  padding: 10px;
 }
 
 .header-title {
@@ -18,4 +24,5 @@
 }
 .index-header li {
   margin-bottom: 15px;
-}/*# sourceMappingURL=header.css.map */
+}
+/*# sourceMappingURL=header.css.map */

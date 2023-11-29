@@ -1,7 +1,7 @@
 'use strict';
 
 {
-  // Wrapper animation-----------
+  // 要素が画面の表示範囲に入るときに表示される -----------
   function callback(entries, obs) {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
