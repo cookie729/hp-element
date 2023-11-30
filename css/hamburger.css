@@ -236,6 +236,12 @@ container
 /*---------------------------------
 text
 ---------------------------------*/
+.item-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .text {
   text-align: left;
   opacity: 0;
@@ -385,7 +391,14 @@ media min640
 
 #hamburger {
   width: 100%;
-  position: fixed;
+  box-shadow: 0 2px 8px #1869bc;
+  padding: 20px 0;
+  height: 30px;
+  margin-bottom: 200px;
+}
+
+#j-hamburger {
+  width: 100%;
   box-shadow: 0 2px 8px #1869bc;
   padding: 20px 0;
   height: 30px;
@@ -399,6 +412,10 @@ media min640
 }
 
 .mobile-nav #open.hide {
+  display: none;
+}
+
+.mobile-nav #j-open.hide {
   display: none;
 }
 
@@ -467,6 +484,44 @@ hamburger menu
 
 .overlay.show li:nth-child(5) {
   transition-delay: 0.5s;
+}
+
+.j-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 64px;
+}
+.j-overlay a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+  transition: background 0.4s;
+}
+.j-overlay a {
+  opacity: 1;
+  transition: background 0.4s;
+}
+.j-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.j-overlay #j-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.j-overlay li {
+  margin-top: 24px;
+  transform: translateY(16px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .pc-nav {

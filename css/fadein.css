@@ -236,6 +236,12 @@ container
 /*---------------------------------
 text
 ---------------------------------*/
+.item-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .text {
   text-align: left;
   opacity: 0;
@@ -381,6 +387,10 @@ media min640
 }
 .index-header li {
   margin-bottom: 15px;
+}
+
+.item-title {
+  margin-bottom: 100px;
 }
 
 .fade-wrap {
