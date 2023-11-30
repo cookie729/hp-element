@@ -1,5 +1,5 @@
 .item-title {
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
 
 .fade-wrap {
@@ -38,4 +38,13 @@
 }
 .bg-plum {
   background: plum;
+}
+
+.fade-element {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-element.appear {
+  opacity: 1;
 }

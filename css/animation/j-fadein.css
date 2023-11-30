@@ -1,3 +1,7 @@
+.item-title {
+  margin-bottom: 100px;
+}
+
 .fade-wrap {
   position: relative;
   width: 450px;
@@ -38,5 +42,14 @@
 
 .bg-plum {
   background: plum;
+}
+
+.fade-element {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-element.appear {
+  opacity: 1;
 }
 /*# sourceMappingURL=j-fadein.css.map */
