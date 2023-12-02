@@ -1,13 +1,14 @@
 'use strict';
 
-$(document).ready(function () {
+{
   // 要素が画面の表示範囲に入るときに表示される -----------
-  function callback(entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        $(entry.target).addClass('appear');
-        observer.unobserve(entry.target);
+  function callback(entries, obs) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
       }
+      entry.target.classList.add('appear');
+      obs.unobserve(entry.target);
     });
   }
 
@@ -15,9 +16,24 @@ $(document).ready(function () {
     threshold: 0.2,
   };
 
-  var observer = new IntersectionObserver(callback, options);
+  const observer = new IntersectionObserver(callback, options);
 
-  $('.wrapper, .fade-wrap').each(function () {
-    observer.observe(this);
+  const targets = document.querySelectorAll('.wrapper, .fade-wrap');
+
+  targets.forEach((target) => {
+    observer.observe(target);
   });
-});
+}
+
+// $(function () {
+//   $(window).scroll(function () {
+//     $('.js-fade').each(function () {
+//       var pos = $(this).offset().top;
+//       var scroll = $(window).scrollTop();
+//       var windowHeight = $(window).height();
+//       if (scroll > pos - windowHeight + 100) {
+//         $(this).addClass('scroll');
+//       }
+//     });
+//   });
+// });
