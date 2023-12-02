@@ -35,3 +35,35 @@
 .bg-plum {
   background: plum;
 }
+
+
+
+
+.box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    color: #fff;
+    background-color: #000066;
+}
+
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
