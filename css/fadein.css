@@ -434,4 +434,17 @@ media min640
 .bg-plum {
   background: plum;
 }
+
+.js-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
 /*# sourceMappingURL=fadein.css.map */

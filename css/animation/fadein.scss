@@ -1,7 +1,6 @@
 .item-title {
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
-
 
 .fade-wrap {
   position: relative;
@@ -39,4 +38,20 @@
 }
 .bg-plum {
   background: plum;
+}
+
+// -----------------
+//      jQuery
+// -----------------
+.js-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
