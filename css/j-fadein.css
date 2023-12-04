@@ -389,22 +389,22 @@ media min640
   margin-bottom: 15px;
 }
 
-.fade-wrap {
+.item-title {
+  margin-bottom: 100px;
+}
+
+.j-fade-wrap {
   position: relative;
+  margin: 0 auto;
+  justify-content: center;
   width: 450px;
   height: 450px;
-  margin: 0 auto;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
-.fade-wrap img {
+.j-fade-wrap img {
   width: 450px;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.fade-wrap.appear {
-  opacity: 1;
 }
 
 .content-title {
@@ -431,18 +431,7 @@ media min640
   background: plum;
 }
 
-.box__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  width: 300px;
-  height: 200px;
-  color: #fff;
-  background-color: #000066;
-}
-
-.js-fade {
+.fade {
   opacity: 0;
   visibility: hidden;
   transform: translateY(50px);
