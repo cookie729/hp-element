@@ -1,0 +1,432 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  color: #000;
+  text-decoration: none;
+  background-color: #ff9;
+}
+
+/* change colours to suit your needs */
+mark {
+  font-style: italic;
+  font-weight: 700;
+  color: #000;
+  background-color: #ff9;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*---------------------------------
+common
+---------------------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  color: #1869bc;
+  margin: 0;
+  font-family: "Kalam", cursive;
+  font-family: "Short Stack", cursive;
+  font-family: "Klee One", cursive;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mb {
+  margin-bottom: 100px;
+}
+
+.mb200 {
+  margin-bottom: 300px;
+}
+
+.mt {
+  margin-top: 100px;
+}
+
+.content-title {
+  position: relative;
+  z-index: 100;
+  font-size: 5rem;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  color: #00005d;
+  font-size: 1rem;
+}
+
+/*---------------------------------
+container
+---------------------------------*/
+.container {
+  background-image: linear-gradient(rgb(252, 238, 254), #cdf7f7, rgb(252, 255, 247), #cdf7f7);
+  height: 100%;
+}
+
+/*---------------------------------
+text
+---------------------------------*/
+.item-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+  opacity: 0;
+  transition: opacity 4s;
+  position: relative;
+  z-index: 60;
+}
+
+.text.appear {
+  opacity: 1;
+}
+
+/*---------------------------------
+wrapper
+---------------------------------*/
+.wrapper {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.4s, transform 1s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.desk-work {
+  width: 350px;
+  position: absolute;
+  right: -30px;
+  bottom: -100px;
+  z-index: 0;
+}
+
+/*---------------------------------
+media max478
+---------------------------------*/
+@media (max-width: 478px) {
+  .content-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+/*---------------------------------
+media min640
+---------------------------------*/
+@media (min-width: 640px) {
+  .content-title {
+    font-size: 5.5rem;
+  }
+  p {
+    line-height: 1.7;
+  }
+  .name,
+.content-item,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
+    margin-left: 30%;
+  }
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 450px;
+    position: absolute;
+    right: -50px;
+    bottom: -150px;
+    z-index: 10;
+  }
+}
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+  main {
+    margin: 0 auto;
+  }
+  .content-title {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .mb {
+    margin-bottom: 200px;
+  }
+  /*---------------------------------
+  text
+  ---------------------------------*/
+  .name,
+.content-item,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
+    margin-left: 40%;
+  }
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 500px;
+    margin: 0 auto;
+    left: 55%;
+  }
+}
+.menu {
+  margin: 50px;
+  background: rgb(245, 255, 255);
+}
+
+.border-bottom {
+  box-shadow: 0 2px 8px 0px #1869bc;
+  padding: 10px;
+}
+
+.header-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.index-header {
+  font-size: 1.4rem;
+}
+.index-header li {
+  margin-bottom: 15px;
+}
+
+.nav {
+  margin: 100px auto;
+  width: 500px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-common {
+  border-radius: 5px;
+  padding: 5px 14px;
+  margin: 3px;
+  font-size: 1.2rem;
+  color: #1869bc;
+}
+.nav-common:hover {
+  background: #1869bc;
+  color: #fff;
+}
+.nav-bg {
+  background: #acfff3;
+  transition: background 5s ease;
+}
+.nav-bg:hover {
+  transition: background 5s ease;
+}
+.nav-color {
+  background: rgb(239, 255, 146);
+  transition: color 5s ease;
+}
+.nav-color:hover {
+  transition: color 5s ease;
+}
+.nav-balance {
+  background: rgb(255, 210, 229);
+  transition: color 5s ease, background 5s ease;
+}
+.nav-balance:hover {
+  transition: color 5s ease, background 5s ease;
+}
+/*# sourceMappingURL=button.css.map */
