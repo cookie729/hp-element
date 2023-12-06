@@ -3,7 +3,7 @@
   box-shadow: 0 2px 8px #1869bc;
   padding: 20px 0;
   height: 30px;
-  margin-bottom: 2px;
+  margin-bottom: 200px;
 }
 
 #j-hamburger {
@@ -165,5 +165,4 @@ hamburger menu
     color: #fff;
     transition-property: background 0.3s ease;
   }
-}
-/*# sourceMappingURL=hamburger.css.map */
+}/*# sourceMappingURL=hamburger.css.map */

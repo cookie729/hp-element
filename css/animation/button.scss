@@ -1,9 +1,18 @@
 $main-color: #1869bc;
+$bg-color: #fff;
 
+/*---------------------------------
+button common
+---------------------------------*/
+.pr15 {
+  padding-right: 15px;
+}
+/*---------------------------------
+パターン1
+---------------------------------*/
 .nav {
-  margin: 100px auto;
+  margin: 50px auto;
   width: 500px;
-
   ul {
     display: flex;
     justify-content: space-around;
@@ -39,5 +48,71 @@ $main-color: #1869bc;
     &:hover {
       transition: color 5s ease, background 5s ease;
     }
+  }
+}
+
+/*---------------------------------
+パターン2
+---------------------------------*/
+.m-auto {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button {
+  width: 400px;
+  background: $main-color;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  height: 50px;
+  font-size: 1.4rem;
+  transition: 0.5s ease all;
+  border: none;
+  &:hover {
+    background: $bg-color;
+    color: $main-color;
+    &:before {
+      width: 100%;
+      transition: 0.5s ease 0.2s all;
+    }
+    &::after {
+      animation: arrow 1.2s 0.7s infinite;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background: $main-color;
+    // top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    margin-top: -5px;
+    border: 7px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: $main-color;
+    opacity: 0;
+  }
+}
+
+@keyframes arrow {
+  50% {
+    right: .2em;
+    opacity: 1;
+  }
+  
+  100% {
+    right: -.4em;
+    opacity: 0;
   }
 }

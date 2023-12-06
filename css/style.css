@@ -107,7 +107,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -175,9 +175,9 @@ body {
   width: 100%;
   color: #1869bc;
   margin: 0;
-  font-family: 'Kalam', cursive;
-  font-family: 'Short Stack', cursive;
-  font-family: 'Klee One', cursive;
+  font-family: "Kalam", cursive;
+  font-family: "Short Stack", cursive;
+  font-family: "Klee One", cursive;
 }
 
 img {
@@ -194,6 +194,10 @@ a {
 
 .mb {
   margin-bottom: 100px;
+}
+
+.mb200 {
+  margin-bottom: 300px;
 }
 
 .mt {
@@ -225,15 +229,19 @@ p {
 container
 ---------------------------------*/
 .container {
-  background-image: linear-gradient(#fff, #cdf7f7, #fff, #cdf7f7);
+  background-image: linear-gradient(rgb(252, 238, 254), #cdf7f7, rgb(252, 255, 247), #cdf7f7);
   height: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
 /*---------------------------------
 text
 ---------------------------------*/
+.item-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .text {
   text-align: left;
   opacity: 0;
@@ -354,7 +362,13 @@ media min640
   }
 }
 .menu {
-  margin: 20px;
+  margin: 50px;
+  background: rgb(245, 255, 255);
+}
+
+.border-bottom {
+  box-shadow: 0 2px 8px 0px #1869bc;
+  padding: 10px;
 }
 
 .header-title {
@@ -373,4 +387,4 @@ media min640
 }
 .index-header li {
   margin-bottom: 15px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

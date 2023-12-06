@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -192,6 +193,10 @@ a {
   text-decoration: none;
 }
 
+.mb50 {
+  margin-bottom: 100px;
+}
+
 .mb {
   margin-bottom: 100px;
 }
@@ -304,11 +309,11 @@ media min640
     line-height: 1.7;
   }
   .name,
-.content-item,
-.service-wrap,
-.asterisk,
-.lang,
-.profile {
+  .content-item,
+  .service-wrap,
+  .asterisk,
+  .lang,
+  .profile {
     margin-left: 30%;
   }
   /*---------------------------------
@@ -345,11 +350,11 @@ media min640
   text
   ---------------------------------*/
   .name,
-.content-item,
-.service-wrap,
-.asterisk,
-.lang,
-.profile {
+  .content-item,
+  .service-wrap,
+  .asterisk,
+  .lang,
+  .profile {
     margin-left: 40%;
   }
   /*---------------------------------
@@ -389,8 +394,18 @@ media min640
   margin-bottom: 15px;
 }
 
+/*---------------------------------
+button common
+---------------------------------*/
+.pr15 {
+  padding-right: 15px;
+}
+
+/*---------------------------------
+パターン1
+---------------------------------*/
 .nav {
-  margin: 100px auto;
+  margin: 50px auto;
   width: 500px;
 }
 .nav ul {
@@ -429,4 +444,67 @@ media min640
 .nav-balance:hover {
   transition: color 5s ease, background 5s ease;
 }
-/*# sourceMappingURL=button.css.map */
+
+/*---------------------------------
+パターン2
+---------------------------------*/
+.m-auto {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button {
+  width: 400px;
+  background: #1869bc;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  height: 50px;
+  font-size: 1.4rem;
+  transition: 0.5s ease all;
+  border: none;
+}
+.button:hover {
+  background: #fff;
+  color: #1869bc;
+}
+.button:hover:before {
+  width: 100%;
+  transition: 0.5s ease 0.2s all;
+}
+.button:hover::after {
+  animation: arrow 1.2s 0.7s infinite;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 3px;
+  width: 0;
+  background: #1869bc;
+  left: 0;
+  bottom: 0;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  margin-top: -5px;
+  border: 7px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-color: #1869bc;
+  opacity: 0;
+}
+
+@keyframes arrow {
+  50% {
+    right: 0.2em;
+    opacity: 1;
+  }
+  100% {
+    right: -0.4em;
+    opacity: 0;
+  }
+}/*# sourceMappingURL=button.css.map */

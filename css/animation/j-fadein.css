@@ -1,3 +1,7 @@
+.item-title {
+  margin-bottom: 100px;
+}
+
 .j-fade-wrap {
   position: relative;
   margin: 0 auto;
@@ -47,5 +51,4 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
-}
-/*# sourceMappingURL=j-fadein.css.map */
+}/*# sourceMappingURL=j-fadein.css.map */
