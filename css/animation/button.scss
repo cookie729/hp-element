@@ -107,12 +107,58 @@ button common
 
 @keyframes arrow {
   50% {
-    right: .2em;
+    right: 0.2em;
     opacity: 1;
   }
-  
+
   100% {
-    right: -.4em;
+    right: -0.4em;
     opacity: 0;
+  }
+}
+
+/*---------------------------------
+パターン3
+---------------------------------*/
+.rotate-icon {
+  position: relative;
+  text-align: center;
+}
+
+.icon-text {
+  font-size: 1.7rem;
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  top: 38px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.icon-hover {
+  opacity: 0;
+  transition: 0.3s ease;
+  &:hover {
+    transition: 0.3s ease;
+    opacity: 1;
+  }
+}
+
+.sunflower {
+  width: 8rem;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: sunflower 2s linear infinite alternate;
+}
+
+@keyframes sunflower {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
   }
 }
