@@ -7,7 +7,7 @@ button common
 }
 
 /*---------------------------------
-パターン1
+パターン 1
 ---------------------------------*/
 .nav {
   margin: 50px auto;
@@ -51,7 +51,7 @@ button common
 }
 
 /*---------------------------------
-パターン2
+パターン 2
 ---------------------------------*/
 .m-auto {
   text-align: center;
@@ -114,7 +114,7 @@ button common
   }
 }
 /*---------------------------------
-パターン3
+パターン 3
 ---------------------------------*/
 .rotate-icon {
   position: relative;
@@ -131,7 +131,6 @@ button common
   right: 0;
   z-index: 20;
 }
-
 .icon-hover {
   opacity: 0;
   transition: 0.3s ease;
@@ -157,4 +156,192 @@ button common
   100% {
     transform: rotate(15deg);
   }
+}
+/*---------------------------------
+パターン 4
+---------------------------------*/
+.more {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  width: 155px;
+}
+.more a {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+.more a .arrow-animation {
+  transition: all 0.15s ease-in-out;
+}
+.more:hover {
+  opacity: 0.7;
+  color: #3d78e5;
+  transition-duration: 0.3s;
+}
+.more:hover .arrow-animation {
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*---------------------------------
+パターン 5
+---------------------------------*/
+.sns-wrap {
+  width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.sns-wrap a {
+  transition: all 0.3s ease-in-out;
+}
+.sns-wrap a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.sns-wrap a:hover i {
+  transition: all 0.3s ease-in-out;
+}
+.sns-wrap a:hover i:hover {
+  transform: scale(1.4);
+  transition: all 0.5s ease-in-out;
+}
+
+.sns-item {
+  color: #2f9eff;
+  font-size: 1.8rem;
+}
+
+/*---------------------------------
+パターン 6
+---------------------------------*/
+#ranking {
+  overflow: hidden;
+}
+
+.shop-item-wrap {
+  position: relative;
+  width: 30%;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.shop-item-wrap:hover {
+  opacity: 0.7;
+  transition-duration: 0;
+}
+.shop-item-wrap-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-item-wrap-desk-top {
+  display: none;
+}
+.shop-item-wrap a:hover .item-img {
+  transition-duration: 0.5s;
+  transform: scale(1.2);
+}
+
+.ranking-main-title {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.ranking-title {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.ranking-number {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sale-tag-right {
+  width: 50px;
+  position: absolute;
+  right: 0;
+}
+
+#ranking .shop-item-wrap-desk-top {
+  display: block;
+}
+
+.shop-item-wrap {
+  width: 18%;
+  max-width: 250px;
+}
+
+.ranking-wrap .shop-item-wrap {
+  width: 30%;
+  max-width: 250px;
+}
+
+.white-bg-inner {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+.ranking-desktop,
+.feature-desktop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ranking-wrap {
+  width: 47%;
+  margin: 0;
+}
+
+.ranking-main-title {
+  width: 75%;
+}
+
+.ranking-title {
+  font-size: 1rem;
+}
+
+.white-bg {
+  padding-top: 5px;
+  background: #fff;
+  width: 100%;
+}
+
+.white-bg-pb {
+  padding-bottom: 15px;
+}
+
+.shop-item-wrap-flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop-item-wrap {
+  width: 48.5%;
+}
+
+.shop-item {
+  overflow: hidden;
+}
+.shop-item .adjustment {
+  -o-object-position: bottom;
+     object-position: bottom;
 }/*# sourceMappingURL=button.css.map */
