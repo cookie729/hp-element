@@ -192,11 +192,23 @@ a {
   text-decoration: none;
 }
 
-.mb {
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.mb150 {
   margin-bottom: 100px;
 }
 
 .mb200 {
+  margin-bottom: 200px;
+}
+
+.mb300 {
   margin-bottom: 300px;
 }
 
@@ -238,7 +250,6 @@ text
 ---------------------------------*/
 .item-title {
   font-size: 2rem;
-  margin-bottom: 20px;
   text-align: center;
 }
 

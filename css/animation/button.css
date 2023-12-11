@@ -219,7 +219,6 @@ button common
 ---------------------------------*/
 .inside-frame {
   width: 900px;
-  height: 300px;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
@@ -235,10 +234,36 @@ button common
   overflow: hidden;
 }
 .inner-item a .item-img {
-  transition: all 0.3s ease;
+  transition-duration: 0.5s;
 }
 .inner-item a:hover .item-img {
   opacity: 0.7;
   transition-duration: 0.5s;
   transform: scale(1.2);
+}
+.inner-item p {
+  font-size: 1.4rem;
+}
+
+/*---------------------------------
+パターン 7
+---------------------------------*/
+.main-visual {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  padding: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgb(255, 147, 237), rgb(255, 255, 255), rgb(148, 123, 247));
+}
+
+.peony {
+  width: 100%;
+  filter: grayscale(0);
+  transition-duration: 0.5s;
+}
+.peony:hover {
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=button.css.map */
