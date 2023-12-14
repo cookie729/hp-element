@@ -283,64 +283,23 @@ button common
   transition-duration: 0.5s;
 }
 
-p,
-.main-nav,
-.location-title {
-  font-family: "M PLUS 1p", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 1.1rem;
-}
-
-.mobile-main-nav {
-  background: rgba(0, 0, 0, 0.7);
-  width: 0;
-  height: 100vh;
-  padding: 0;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  opacity: 0;
-  transition: 0.5s;
-  z-index: 50;
-  margin: 0 auto;
-}
-.mobile-main-nav .nav-title {
-  margin: 3rem 0;
-  color: #1adc24;
-}
-.mobile-main-nav .nav-text {
-  margin: 0 auto;
-  width: 150px;
-  display: block;
-  color: #1adc24;
-}
-.mobile-main-nav .nav-text::after {
-  content: "";
-  display: block;
-  width: 0;
-  padding: 0;
-  transition: width 0.3s;
-  border-bottom: 1px solid #1adc24;
-}
-.mobile-main-nav .nav-text:hover::after {
-  width: 70%;
-  transition-duration: 0.3s;
-}
-
-.nav-white {
+.nav-basic {
   margin: 0 auto;
   width: 200px;
   height: 100px;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.8rem;
+}
+
+.nav-white {
+  background: white;
 }
 .nav-white .nav-text {
   display: block;
   margin: 0 auto;
   width: 100px;
-  font-size: 1.8rem;
   color: #636161;
 }
 .nav-white .nav-text::after {
@@ -353,4 +312,26 @@ p,
 .nav-white .nav-text:hover::after {
   width: 115%;
   transition-duration: 0.3s;
+}
+
+.nav-black {
+  background: #000;
+}
+.nav-black .nav-text {
+  position: relative;
+  color: #ffffff;
+}
+.nav-black .nav-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav-black .nav-text:hover::after {
+  width: 130%;
 }/*# sourceMappingURL=button.css.map */
