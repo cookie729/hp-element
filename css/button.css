@@ -645,6 +645,10 @@ button common
 }
 .inner-item p {
   font-size: 1.4rem;
+  transition: color 0.5s;
+}
+.inner-item p:hover {
+  color: rgb(177, 177, 177);
 }
 
 /*---------------------------------
@@ -687,8 +691,8 @@ button common
 
 .nav-basic {
   margin: 0 auto;
-  width: 200px;
-  height: 100px;
+  width: 350px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -701,7 +705,6 @@ button common
 .nav-white .nav-text {
   display: block;
   margin: 0 auto;
-  width: 100px;
   color: #636161;
 }
 .nav-white .nav-text::after {
@@ -712,7 +715,7 @@ button common
   border-bottom: 1px solid #333;
 }
 .nav-white .nav-text:hover::after {
-  width: 115%;
+  width: 125%;
   transition-duration: 0.3s;
 }
 
