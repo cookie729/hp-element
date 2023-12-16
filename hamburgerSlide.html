@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/hamburger-slide.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kalam&family=Klee+One:wght@600&family=Short+Stack&display=swap"
       rel="stylesheet"
@@ -30,6 +30,48 @@
         <li></li>
         <li></li>
       </ul>
+    </header>
+
+
+    <header id="header">
+      <div class="site-title">
+        <a class="home" href="index.html">
+          <img class="site-title-img" src="images/photographer.fumika.svg" alt="">
+        </a>
+      </div>
+  
+  
+      <nav class="hamburger-menu">
+        <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
+          <ul class="mobile-main-nav main-nav">
+            <li class="nav-title">
+              <a class="nav-text" href="index.html">Home</a>
+            </li>
+  
+            <li class="nav-title">
+              <a class="nav-text"href="about.html">About</a>
+            </li>
+            
+            <div class="mobile-category-menu nav-title nav-text">Category<i class="fa-solid fa-caret-down"></i>
+              <ul class="mobile-category-nav">
+                <li><a class="nav-text" href="animal.html">Animal</a></li>
+                <li><a class="nav-text" href="city.html">City</a></li>
+                <li><a class="nav-text" href="nature.html">Nature</a></li>
+                <li><a class="nav-text" href="people.html">People</a></li>
+                <li><a class="nav-text" href="sky.html">Sky</a></li>
+              </ul>
+            </div>
+  
+            <li class="nav-title">
+              <a class="nav-text"href="photo-gallery.html">Photo gallery</a>
+            </li>
+  
+  
+            <li class="nav-title">
+              <a class="nav-text" href="https://www.instagram.com/kofu1121/">Instagram</a>
+            </li>
+          </ul>
+      </nav>
     </header>
 
     <main>
@@ -98,6 +140,8 @@
       </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script src="js/j-hamburger-slide.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/j-hamburger.js"></script>
