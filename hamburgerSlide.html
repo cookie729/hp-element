@@ -14,9 +14,17 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css"
+    />
+    <link
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d0896c8887.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="container">
     <header class="menu border-bottom">
@@ -32,118 +40,46 @@
       </ul>
     </header>
 
-
-    <header id="header">
-      <div class="site-title">
-        <a class="home" href="index.html">
-          <img class="site-title-img" src="images/photographer.fumika.svg" alt="">
-        </a>
-      </div>
-  
-  
+    <main id="header">
       <nav class="hamburger-menu">
-        <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
-          <ul class="mobile-main-nav main-nav">
-            <li class="nav-title">
-              <a class="nav-text" href="index.html">Home</a>
-            </li>
-  
-            <li class="nav-title">
-              <a class="nav-text"href="about.html">About</a>
-            </li>
-            
-            <div class="mobile-category-menu nav-title nav-text">Category<i class="fa-solid fa-caret-down"></i>
-              <ul class="mobile-category-nav">
-                <li><a class="nav-text" href="animal.html">Animal</a></li>
-                <li><a class="nav-text" href="city.html">City</a></li>
-                <li><a class="nav-text" href="nature.html">Nature</a></li>
-                <li><a class="nav-text" href="people.html">People</a></li>
-                <li><a class="nav-text" href="sky.html">Sky</a></li>
-              </ul>
-            </div>
-  
-            <li class="nav-title">
-              <a class="nav-text"href="photo-gallery.html">Photo gallery</a>
-            </li>
-  
-  
-            <li class="nav-title">
-              <a class="nav-text" href="https://www.instagram.com/kofu1121/">Instagram</a>
-            </li>
-          </ul>
+        <button class="btn-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="mobile-main-nav main-nav">
+          <li class="nav-title">
+            <a class="nav-text" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-title">
+            <a class="nav-text" href="about.html">About</a>
+          </li>
+
+          <div class="mobile-category-menu nav-title nav-text">
+            Category
+            <i class="fa-solid fa-caret-down"></i>
+            <ul class="mobile-category-nav">
+              <li><a class="nav-text" href="animal.html">Animal</a></li>
+              <li><a class="nav-text" href="city.html">City</a></li>
+              <li><a class="nav-text" href="nature.html">Nature</a></li>
+              <li><a class="nav-text" href="people.html">People</a></li>
+              <li><a class="nav-text" href="sky.html">Sky</a></li>
+            </ul>
+          </div>
+
+          <li class="nav-title">
+            <a class="nav-text" href="photo-gallery.html">Photo gallery</a>
+          </li>
+
+          <li class="nav-title">
+            <a class="nav-text" href="https://www.instagram.com"
+              >Instagram</a
+            >
+          </li>
+        </ul>
       </nav>
-    </header>
-
-    <main>
-      <h2 class="item-title mb50">Javascript</h2>
-      <div id="hamburger">
-        <div class="mobile-nav">
-          <button class="material-icons" id="open">menu</button>
-        </div>
-
-        <nav class="pc-nav">
-          <ul>
-            <li><a class="pc-nav-text" href="#">Top</a></li>
-            <li><a class="pc-nav-text" href="service.html">Service</a></li>
-            <li><a class="pc-nav-text" href="about.html">About</a></li>
-            <li><a class="pc-nav-text" href="works.html">Works</a></li>
-            <li><a class="pc-nav-text" href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="overlay">
-          <span class="material-icons" id="close">close</span>
-          <ul class="close-nav">
-            <li class="close-text"><a href="#">Top</a></li>
-            <li class="close-text"><a href="hamburger.html">Hamburger</a></li>
-            <li class="close-text"><a href="hamburger.html">Hamburger</a></li>
-            <li class="close-text"><a href="hamburger.html">Hamburger</a></li>
-            <li class="close-text"><a href="hamburger.html">Hamburger</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <h2 class="item-title mb50">jQuery</h2>
-      <div id="j-hamburger">
-        <div class="mobile-nav">
-          <button class="material-icons" id="j-open">menu</button>
-        </div>
-
-        <nav class="pc-nav">
-          <ul>
-            <li><a class="pc-nav-text" href="#">Top</a></li>
-            <li><a class="pc-nav-text" href="service.html">Service</a></li>
-            <li><a class="pc-nav-text" href="about.html">About</a></li>
-            <li><a class="pc-nav-text" href="works.html">Works</a></li>
-            <li><a class="pc-nav-text" href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="j-overlay">
-          <span class="material-icons" id="j-close">close</span>
-          <ul class="close-nav">
-            <li class="close-text"><a href="#">Top</a></li>
-            <li class="close-text">
-              <a href="hamburger.html">Hamburger</a>
-            </li>
-            <li class="close-text">
-              <a href="hamburger.html">Hamburger</a>
-            </li>
-            <li class="close-text">
-              <a href="hamburger.html">Hamburger</a>
-            </li>
-            <li class="close-text">
-              <a href="hamburger.html">Hamburger</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
     <script src="js/j-hamburger-slide.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/hamburger.js"></script>
-    <script src="js/j-hamburger.js"></script>
   </body>
 </html>
