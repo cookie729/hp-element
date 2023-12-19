@@ -1,17 +1,12 @@
 $bg-color: #000;
 $text-color: #fff;
 
-.main-nav {
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 1.1rem;
-}
 //------------------------
 // header
 // -----------------------
 #header {
   width: 100%;
-  height: 40px;
+  height: 50px;
   background: $bg-color;
   position: relative;
   z-index: 150;
@@ -22,8 +17,11 @@ $text-color: #fff;
 // -----------------------
 .btn-menu {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  margin: 0 auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   z-index: 150;
   background: none;
   color: $text-color;
@@ -33,7 +31,7 @@ $text-color: #fff;
   }
 }
 
-.mobile-main-nav {
+.main-nav {
   background: rgba(0, 0, 0, 0.7);
   width: 0;
   height: 100vh;
@@ -68,14 +66,14 @@ $text-color: #fff;
     }
   }
 
-  .mobile-category-menu {
+  .category-menu {
     &:hover {
       cursor: pointer;
     }
     .fa-solid {
       margin-left: 5px;
     }
-    .mobile-category-nav {
+    .category-nav {
       background: rgba(0, 0, 0, 0.8);
       width: 0;
       padding: 0;
@@ -103,7 +101,7 @@ $text-color: #fff;
   }
 }
 
-.mobile-main-nav.open-menu {
+.main-nav.open-menu {
   width: 100%;
   height: 100vh;
   opacity: 1;

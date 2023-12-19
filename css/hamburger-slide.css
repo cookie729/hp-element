@@ -400,15 +400,9 @@ media min640
   margin-bottom: 15px;
 }
 
-.main-nav {
-  font-family: "M PLUS 1p", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 1.1rem;
-}
-
 #header {
   width: 100%;
-  height: 40px;
+  height: 50px;
   background: #000;
   position: relative;
   z-index: 150;
@@ -416,8 +410,11 @@ media min640
 
 .btn-menu {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  margin: 0 auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   z-index: 150;
   background: none;
   color: #fff;
@@ -427,7 +424,7 @@ media min640
   cursor: pointer;
 }
 
-.mobile-main-nav {
+.main-nav {
   background: rgba(0, 0, 0, 0.7);
   width: 0;
   height: 100vh;
@@ -440,17 +437,17 @@ media min640
   z-index: 50;
   margin: 0 auto;
 }
-.mobile-main-nav .nav-title {
+.main-nav .nav-title {
   margin: 3rem 0;
   color: #fff;
 }
-.mobile-main-nav .nav-text {
+.main-nav .nav-text {
   margin: 0 auto;
   width: 150px;
   display: block;
   color: #fff;
 }
-.mobile-main-nav .nav-text::after {
+.main-nav .nav-text::after {
   content: "";
   display: block;
   width: 0;
@@ -458,17 +455,17 @@ media min640
   transition: width 0.3s;
   border-bottom: 1px solid #fff;
 }
-.mobile-main-nav .nav-text:hover::after {
+.main-nav .nav-text:hover::after {
   width: 70%;
   transition-duration: 0.3s;
 }
-.mobile-main-nav .mobile-category-menu:hover {
+.main-nav .category-menu:hover {
   cursor: pointer;
 }
-.mobile-main-nav .mobile-category-menu .fa-solid {
+.main-nav .category-menu .fa-solid {
   margin-left: 5px;
 }
-.mobile-main-nav .mobile-category-menu .mobile-category-nav {
+.main-nav .category-menu .category-nav {
   background: rgba(0, 0, 0, 0.8);
   width: 0;
   padding: 0;
@@ -478,23 +475,23 @@ media min640
   cursor: auto;
   overflow: hidden;
 }
-.mobile-main-nav .mobile-category-menu .mobile-category-nav.open-menu {
+.main-nav .category-menu .category-nav.open-menu {
   width: 150px;
   transition: 0.5s;
   opacity: 1;
 }
-.mobile-main-nav .mobile-category-menu .mobile-category-nav li {
+.main-nav .category-menu .category-nav li {
   margin: 2rem auto;
   width: 80px;
 }
-.mobile-main-nav .mobile-category-menu .mobile-category-nav .nav-text {
+.main-nav .category-menu .category-nav .nav-text {
   text-align: left;
 }
-.mobile-main-nav .mobile-category-menu .mobile-category-nav .nav-text:hover {
+.main-nav .category-menu .category-nav .nav-text:hover {
   cursor: pointer;
 }
 
-.mobile-main-nav.open-menu {
+.main-nav.open-menu {
   width: 100%;
   height: 100vh;
   opacity: 1;
