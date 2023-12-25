@@ -1,20 +1,18 @@
 $bg-color: #000;
 $text-color: #fff;
 
-//------------------------
-// header
-// -----------------------
-#header {
-  width: 100%;
+.container { 
+  height: 100vh;
+}
+
+#hamburger {
+  width: 50%;
   height: 50px;
   background: $bg-color;
   position: relative;
   z-index: 150;
 }
 
-//------------------------
-// common
-// -----------------------
 .btn-menu {
   position: absolute;
   margin: 0 auto;
@@ -44,11 +42,12 @@ $text-color: #fff;
   z-index: 50;
   margin: 0 auto;
   .nav-title {
-    margin: 3rem 0;
+    margin: 3rem auto 3rem 30px;
     color: $text-color;
+    text-align: center;
   }
   .nav-text {
-    margin: 0 auto;
+    text-align: left;
     width: 150px;
     display: block;
     color: $text-color;
@@ -70,9 +69,6 @@ $text-color: #fff;
     &:hover {
       cursor: pointer;
     }
-    .fa-solid {
-      margin-left: 5px;
-    }
     .category-nav {
       background: rgba(0, 0, 0, 0.8);
       width: 0;
@@ -80,7 +76,6 @@ $text-color: #fff;
       position: absolute;
       transition: 0.5s;
       opacity: 0;
-      cursor: auto;
       overflow: hidden;
       &.open-menu {
         width: 150px;
@@ -88,8 +83,7 @@ $text-color: #fff;
         opacity: 1;
       }
       li {
-        margin: 2rem auto;
-        width: 80px;
+        margin: 2rem 5px;
       }
       .nav-text {
         text-align: left;
