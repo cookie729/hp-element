@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .slide-show {
   width: 100%;
 }
@@ -16,20 +15,17 @@
 
 .slide-item-left {
   width: 9.0909090909%;
-  padding: 14px 7px 7px;
+  padding: 14px 7px 7px 7px;
 }
 
 .slide-img-left,
 .slide-img-right {
-  width: auto; /* 画像の幅を自動調整 */
-  height: 100px; /* 画像の高さを100pxに固定 */
-  display: block; /* 余計なスペースを排除 */
-  max-width: 100%;
+  height: 100px;
 }
 
 .slide-item-right {
   width: 8.3333333333%;
-  padding: 14px 7px 7px;
+  padding: 7px 7px 14px 7px;
 }
 
 .slide-left {
@@ -65,7 +61,7 @@
   display: flex;
 }
 .recommend-wrap {
-  margin-right: 15px;
+  margin-right: 14px;
 }
 .recommend-img {
   height: 150px;

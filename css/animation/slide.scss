@@ -17,19 +17,16 @@ $text-color: #fff;
 
 .slide-item-left {
   width: calc(100% / 11);
-  padding: 14px 7px 7px;
+  padding: 14px 7px 7px 7px;
 }
 .slide-img-left,
 .slide-img-right {
-  width: auto; /* 画像の幅を自動調整 */
-  height: 100px; /* 画像の高さを100pxに固定 */
-  display: block; /* 余計なスペースを排除 */
-  max-width: 100%; 
+  height: 100px;
 }
 
 .slide-item-right {
   width: calc(100% / 12);
-  padding: 14px 7px 7px;
+  padding: 7px 7px 14px 7px;
 }
 
 .slide-left {
@@ -62,10 +59,9 @@ $text-color: #fff;
   &-box {
     overflow-x: scroll;
     display: flex;
-    // overflow: inherit;
   }
   &-wrap {
-    margin-right: 15px;
+    margin-right: 14px;
   }
   &-img {
     height: 150px;
