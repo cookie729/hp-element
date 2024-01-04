@@ -18,33 +18,42 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="menu">
-      <h1 class="header-title">TOP</h1>
-      <ul class="index-header">
-        <li>
-          <a href="hamburger.html">Hamburger Pattern1(JavaScript jQuery)</a>
-        </li>
-        <li>
-          <a href="hamburgerSlide.html">Hamburger Pattern2(JavaScript jQuery)</a>
-        </li>
-        <li>
-          <a href="fadein.html">FadeIn (JavaScript)</a>
-        </li>
-        <li>
-          <a href="j-fadein.html">FadeIn (jQuery)</a>
-        </li>
-        <li>
-          <a href="button.html">Button Animation</a>
-        </li>
-        <li>
-          <a href="slide.html">Slide Show & Light Box</a>
-        </li>
-        <li>
-          <a href="button.html">Form</a>
-        </li>
-        <li></li>
-      </ul>
+  <body class="menu">
+    <header class="mb50">
+      <h1>HTML/CSS チートシート</h1>
     </header>
+    <main>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-title">Header</div>
+          <div class="accordion-content">
+            <a href="hamburger.html">
+              ハンバーガーメニュー パターン1(JavaScript jQuery)
+            </a>
+            <a href="hamburgerSlide.html">
+              ハンバーガーメニュー パターン2(JavaScript jQuery)
+            </a>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Contents (コンテンツ)</div>
+          <div class="accordion-content">
+            <a href="fadein.html">フェードイン (JavaScript)</a>
+            <a href="j-fadein.html">フェードイン (jQuery)</a>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Parts (パーツ)</div>
+          <div class="accordion-content">
+            <a href="button.html">ボタン アニメーション</a>
+            <a href="slide.html">スライドショー & Light Box</a>
+            <a href="button.html">フォーム</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
